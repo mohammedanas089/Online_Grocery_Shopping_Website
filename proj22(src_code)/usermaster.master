@@ -1,0 +1,230 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="usermaster.master.cs" Inherits="usermaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .newStyle1
+        {
+            background-color: #000000;
+        }
+        .newStyle1
+        {
+            font-weight: 700;
+        }
+        .newStyle1
+        {
+            font-size: large;
+        }
+        .style1
+        {
+            width: 100%;
+            
+        }
+        .style3
+        {
+            text-align: center;
+            font-size: large;
+            font-family: cursive;
+        }
+        .style4
+        {
+            text-align: right;
+        }
+        .style5
+        {
+            width: 206px;
+        }
+        .style6
+        {
+            width: 338px;
+        }
+        .style7
+        {
+            width: 312px;
+            text-align: center;
+        }
+        .style8
+        {
+            width: 93px;
+            text-align:left;
+        }
+        .style8:hover
+        {
+            filter: invert(72%) sepia(79%) saturate(366%) hue-rotate(34deg) brightness(89%) contrast(89%);;
+            border-bottom: 2px solid #94c842;
+        }
+        
+        .style9
+        {
+            font-weight: bold;
+        }
+        .style10
+        {
+            font-family: cursive;
+            font-size: large;
+        }
+        .style11
+        {
+            width: 324px;
+        }
+        .style12
+        {
+            width: 267px;
+        }
+        .hdi:hover
+        {
+           
+            
+            
+            }
+            .icons:hover
+            {
+                border:solid 3px black;
+                border-radius:5px; 
+                }
+    </style>
+</head>
+<body style="background-color: #c1f2a0;background-image: url(images/back4.jpg); background-repeat:repeat;" >
+    <form id="form1" runat="server" >
+    
+    <div style="background-color: #eaede8; margin: 70px;border-radius: 25px;">
+        <div class="style1" style="background-color: white; color: black;border-radius: 25px 25px 0px 0px;">
+            <table style="width: 100%">
+                <tr>
+                    <td class="style12" >
+                        <div style="border-width: 1px; border-color: Gray; text-align: center; width: 245px; border-right-style: groove;">
+                            <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Overline="False" Font-Size="50pt"
+                                Text="Fresh Mart" 
+                                Style="font-size: x-large; font-weight: bold; font-family: cursive;" 
+                                CssClass="style11"></asp:Label>
+                            &nbsp;<br />
+                            <asp:Label ID="Label3" runat="server" Font-Bold="False" Font-Overline="True" Font-Size="30px"
+                                Text="Make Shopping Convienient" Style="font-size: large; font-weight: bold; font-family: cursive;"
+                                CssClass="style11"></asp:Label></div>
+                    </td>
+                    <td class="style8">
+                        &nbsp; 
+                        <a href="homepage.aspx" style="text-decoration: none; text-align: left;">
+                            <asp:Image ID="Image1" runat="server" Height="30px" Width="30px" 
+                            ImageUrl="~/images/home.png" class="hdi" />
+                            <br />
+                            <asp:Label ID="Label9" runat="server" Style="font-size: large; font-family: cursive"
+                                Text="Home" ForeColor="Black" CssClass="style9"></asp:Label></a>
+                    </td>
+                    <td class="style8">
+                        <a href="signui.aspx" style="text-decoration: none; text-align: left;">
+                            <asp:Image ID="Image2" runat="server" Height="30px" Width="30px" 
+                            ImageUrl="~/images/sign-up.png" class="hdi"/>
+                            <br />
+                            <asp:Label ID="Label10" runat="server" Style="font-size: large; font-family: cursive"
+                                Text="Login" CssClass="style9" ForeColor="Black"></asp:Label></a>
+                    </td>
+                    <td class="style8">
+                        <a href="products.aspx" style="text-decoration: none; text-align: left;">
+                            <asp:Image ID="Image3" runat="server" Height="30px" Width="30px" 
+                            ImageUrl="~/images/groceries.png" class="hdi" />
+                            <br />
+                            <asp:Label ID="Label13" runat="server" Style="font-family: cursive; font-size: large"
+                                Text="Groceries" CssClass="style9" ForeColor="Black"></asp:Label></a>
+                    </td>
+                    <td class="style8">
+                        <a href="prodhis.aspx" style="text-decoration: none; text-align: left;">
+                            <asp:Image ID="Image4" runat="server" Height="30px" Width="30px" 
+                            ImageUrl="~/images/shopping-list.png" class="hdi" />
+                            <br />
+                            <asp:Label ID="Label12" runat="server" Style="font-size: large; font-family: cursive"
+                                Text="Orders" CssClass="style9" ForeColor="Black"></asp:Label></a>
+                    </td>
+                    <td class="style8">
+                        <a href="feed.aspx" style="text-decoration: none; text-align: left;">
+                            <asp:Image ID="Image5" runat="server" Height="30px" Width="30px" 
+                            ImageUrl="~/images/chat.png" class="hdi"/>
+                            <br />
+                            <asp:Label ID="Label14" runat="server" Style="font-size: large; font-family: cursive"
+                                Text="Comment" CssClass="style9" ForeColor="Black"></asp:Label></a>
+                    </td>
+                    <td style="text-align: right; margin-right: 0px;">
+                        <div class="style4" style="color: #FFFFFF; margin-right: 20px;">
+                            
+                                <asp:Label ID="Label1" runat="server" ForeColor="Black" Style="font-size: large;
+                                    font-family: cursive; font-weight: 700;"></asp:Label>
+                            <asp:ImageButton ID="Button1" runat="server" ImageUrl="~/images/sign-out-option.png"
+                                OnClick="Button1_Click" Height="30px" Width="30px" class="icons" />
+                            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/trolley.png"
+                                OnClick="ImageButton1_Click1" Height="30px" Width="30px" class="icons" />
+                                        <br />
+                            
+                                        &nbsp;<asp:Label ID="Label15" runat="server" ForeColor="Black" Style="font-size: large;
+                                    font-family: cursive; font-weight: 700;"></asp:Label>
+                            
+                                <br />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table class="style1">
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: white; color: black;border-radius: 25px;">
+                    <table class="style1" style="background-image: none; background-repeat: no-repeat;
+                        color: black; background-color: white;border-radius:0px 0px 25px 25px;">
+                        <tr>
+                            <td class="style7" style="border-right-style: ridge; border-color: #FFFFFF">
+                                <asp:Label ID="Label4" runat="server" Style="font-size: large; font-weight: 700;
+                                    text-decoration: underline; font-family: cursive;">ABOUT US</asp:Label>
+                                <br />
+                                We made this website to provide grocery to their home steps without any sorts of
+                                restriction
+                            </td>
+                            <td class="style6" style="border-color: #FFFFFF; text-align: center; border-right-style: ridge;
+                                font-size: medium;">
+                                <asp:Label ID="Label5" runat="server" Style="font-weight: 700;
+                                    text-decoration: underline" CssClass="style10">FOLLOW US</asp:Label>
+                                <br />
+                                You can use the following links to connect with us.<br />
+                                <asp:ImageButton ID="img2" runat="server" ImageUrl="~/images/facebook.png" Height="30px"
+                                    Width="30px" ImageAlign="Middle" />
+                                &nbsp;
+                                <asp:ImageButton ID="img3" runat="server" ImageUrl="~/images/twitter.png" Height="30px"
+                                    Width="30px" ImageAlign="Middle" />
+                                &nbsp;<asp:ImageButton ID="img4" runat="server" 
+                                    ImageUrl="~/images/instagram.png" Height="37px"
+                                    Width="37px" ImageAlign="Middle" />
+                            </td>
+                            <td class="style5" style="border-color: #FFFFFF; text-align: center; border-right-style: ridge;">
+                                <asp:Label ID="Label6" runat="server" Style="font-weight: 700; text-decoration: underline;
+                                    " CssClass="style10">RETURNS</asp:Label>
+                                <br />
+                                Easy return with 80%-95% cashback
+                            </td>
+                            <td style="text-align: center">
+                                <asp:Label ID="Label7" runat="server" Style="text-decoration: underline; font-weight: 700;
+                                    " CssClass="style10">NOTIFICATION SIGN UP</asp:Label>
+                                <br />
+                                Still in progress
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style3" colspan="4">
+                                <strong><em>COPYRIGHTS @ ALL RIGHTS RESERVED
+                        </em></strong>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    </form>
+</body>
+</html>

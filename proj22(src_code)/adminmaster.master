@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminmaster.master.cs"
+    Inherits="adminmaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+            width: 56%;
+        }
+        .style6
+        {
+            width: 4%;
+        }
+        .style7
+        {
+            width: 1%;
+        }
+        .bg
+        {
+            background:linear-gradient(to bottom right,#666666,#FFFFFF);
+            
+            font-family:Terminal;
+            }
+    </style>
+</head>
+<body >
+    <form id="form1" runat="server">
+    <div  class="bg">
+        <table class="style1">
+            <tr>
+                <td colspan="3" class="style2" height="100px">
+                    <asp:Label ID="Label1" runat="server"  Font-Size="XX-Large" ForeColor="White"  Text="ADMIN"></asp:Label>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="style7">
+                    <asp:Menu ID="Menu1" runat="server" Font-Overline="False" Font-Size="X-Large" 
+                        ForeColor="White" DynamicVerticalOffset="15" 
+                        ItemWrap="True">
+                        <Items>
+                            <asp:MenuItem Text="PRODUCTS">
+                                <asp:MenuItem NavigateUrl="~/prodadd.aspx" Text="Add" Value="Add">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/prodrem.aspx" Text="Edit" Value="Edit">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/usrrem.aspx" Text="USER" 
+                                Value="New Item"></asp:MenuItem>
+                            <asp:MenuItem Text="ORDERS" Value="New Item" NavigateUrl="~/adorder.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/adcom.aspx" Text="COMMENTS" Value="COMMENTS">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/homepage.aspx" Text="Back" Value="Back"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#999999"  />
+                        <StaticMenuItemStyle VerticalPadding="20px" />
+                    </asp:Menu>
+                </td>
+                 <td class="style6">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+                   
+                     
+                    </asp:ContentPlaceHolder>
+               </td>
+                 <td class="style6">
+                     &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style7">
+                    <asp:Button ID="Button1" runat="server" Height="20px" OnClick="Button1_Click" Text="logout"
+                        Width="49px" ValidationGroup=false />
+                </td>
+                 <td class="style6" colspan="2">
+                     &nbsp;</td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+    
+</body>
+</html>
